@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			font-family: Monstserrat, sans-serif;
+		}
+		.main{
+			height: 100vh;
+			background: url('images01/interior3.png') no-repeat center center/cover;
+			color: white;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.navbar{
+			display: flex;
+			justify-content: space-between;
+			padding: 1rem 2rem;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+		.logo{
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		.nav-links{
+			list-style: none;
+			display: flex;
+			gap: 1rem;
+		}
+		.nav-links a{
+			color: white;
+			text-decoration: none;
+			font-size: 1rem;
+		}
+		.main-content h1{
+			font-size: 3rem;
+			margin: 0;
+		}
+		.main-content p{
+			font-size: 1.5rem;
+		}
+		.btn{
+			padding: 0.75rem 1.5rem;
+			background-color: #ff6600;
+			color: white;
+			text-decoration: none;
+			font-size: 1rem;
+			border-radius: 5px;
+			margin-top: 1rem;
+			display: inline-block;
+		}
+		section{
+			padding: 4rem 2rem;
+			text-align: center;
+		}
+		.about, .services, .contact{
+			background-color: #f4f4f4;
+			margin: 2rem 0;
+		}
+		.service{
+			margin-top: 1rem;
+		}
+		footer{
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: 1rem 0;
+		}
+	</style>
+</head>
+<body>
+<header class="main">
+        <nav class="navbar">
+            <div class="logo">INTERIOR DESIGNER</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h1>Welcome to MySite</h1>
+            <p>Your success starts here</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel metus nec orci vestibulum fermentum.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Service 1</h3>
+            <p>Description of Service 1.</p>
+        </div>
+        <div class="service">
+            <h3>Service 2</h3>
+            <p>Description of Service 2.</p>
+        </div>
+        <div class="service">
+            <h3>Service 3</h3>
+            <p>Description of Service 3.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us at <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 MySite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
